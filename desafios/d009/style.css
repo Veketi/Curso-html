@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    display: block;
+    font-size: 45px;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+div a{
+    margin: 5px;
+}
+
+/* Contêiner de vídeos */
+div.videos{
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+    justify-content: flex-start; /* Distribui os itens com espaçamento igual */
+    gap: 10px; /* Espaçamento entre os vídeos */
+    max-width: 500px; /* Limita a largura máxima do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner */
+}
+
+/* Estilos para cada vídeo */
+video {
+    flex: 1 1 calc(50% - 10px); /* Cada vídeo ocupa 50% do espaço, com espaçamento de 10px */
+    box-sizing: border-box;
+}
+
+video, video img {
+    width: 100%; /* Faz com que o vídeo ou imagem ocupe 100% do tamanho do seu contêiner */
+    height: auto; /* Mantém a proporção do vídeo ou imagem */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para o vídeo ou imagem */
+    margin-bottom: 20px; /* Espaço abaixo do vídeo ou imagem */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    video {
+        flex: 1 1 100%; /* Em telas menores, os vídeos ocupam 100% da largura */
+    }
+}
