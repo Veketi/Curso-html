@@ -6,19 +6,39 @@
     <style>
         body{
             height: 100vh;
+            /*
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center top;
-            background-repeat: repeat-y;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+
+                Shorthand - background:
+                Color -> Image -  Position -> Repeat > [Size] > Attachment
+
+            */
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
             background-size: cover;
         }
         main{
             background-color: white;
-            width: 800px;
+            max-width: 800px;
             padding: 10px;
             margin: auto;
             border: 1px solid black;
             border-radius: 15px;
+        }
+        main h1{
+            padding: 10px;
+            text-align: center;
+        }
+        main p{
+            text-align: justify;
+            text-indent: 8px;
+            padding: 4px;
+            font: normal normal 1em Arial, Helvetica, sans-serif;
         }
     </style>
     <title>Document</title>
