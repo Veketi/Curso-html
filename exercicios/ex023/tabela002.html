@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 600px;
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+            border-top: 1px solid black;
+            border-right: 1px solid black;
+            border-left: 1px solid black;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .num{
+            text-align: end;
+        }
+        tbody > tr:nth-child(odd){
+            background-color: rgb(228, 228, 228);
+        }
+        thead, tfoot{
+            background-color: rgb(228, 228, 228);
+        }
+    </style>
+    <title>Tabelas</title>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <!--
+        Anatomia para tabelas grandes
+        CAPTION
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col" width="175px">Posição</th>
+                <th scope="col" width="175px">Unidade Federativa</th>
+                <th scope="col" width="175px">População</th>
+                <th scope="col" width="175px">% da pop. total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1º</td>
+                <td>São Paulo</td>
+                <td class="num">44.411.238</td>
+                <td class="num">21,5%</td>
+            </tr>
+            <tr>
+                <td>2º</td>
+                <td>Minas Gerais</td>
+                <td class="num">20.539.989</td>
+                <td class="num">10,1%</td>
+            </tr>
+            <tr>
+                <td>3º</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">16.055.174</td>
+                <td class="num">7,9%</td>
+            </tr>
+            <tr>
+                <td>4º</td>
+                <td>Bahia</td>
+                <td class="num">14.141.626</td>
+                <td class="num">6,9%</td>
+            </tr>
+            <tr>
+                <td>5º</td>
+                <td>Paraná</td>
+                <td class="num">11.444.380</td>
+                <td class="num">5,6%</td>
+            </tr>
+            <tr>
+                <td>6º</td>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10.882.965</td>
+                <td class="num">5,3%</td>
+            </tr>
+            <tr>
+                <td>7º</td>
+                <td>Pernambuco</td>
+                <td class="num">9.058.931</td>
+                <td class="num">4,4%</td>
+            </tr>
+            <tr>
+                <td>8º</td>
+                <td>Ceará</td>
+                <td class="num">8.794.957</td>
+                <td class="num">4,3%</td>
+            </tr>
+            <tr>
+                <td>9º</td>
+                <td>Pará</td>
+                <td class="num">8.120.131</td>
+                <td class="num">3,9%</td>
+            </tr>
+            <tr>
+                <td>10º</td>
+                <td>Santa Catarina</td>
+                <td class="num">7.610.361</td>
+                <td class="num">3,7%</td>
+            </tr>
+            <tr>
+                <td>11º</td>
+                <td>Goiás</td>
+                <td class="num">7.056.495</td>
+                <td class="num">3,4%</td>
+            </tr>
+            <tr>
+                <td>12º</td>
+                <td>Maranhão</td>
+                <td class="num">6.776.699</td>
+                <td class="num">3,3%</td>
+            </tr>
+            <tr>
+                <td>13º</td>
+                <td>Paraíba</td>
+                <td class="num">3.974.687</td>
+                <td class="num">1,9%</td>
+            </tr>
+            <tr>
+                <td>14º</td>
+                <td>Amazonas</td>
+                <td class="num">3.941.613</td>
+                <td class="num">1,9%</td>
+            </tr>
+            <tr>
+                <td>15º</td>
+                <td>Espírito Santo</td>
+                <td class="num">3.833.712</td>
+                <td class="num">1,9%</td>
+            </tr>
+            <tr>
+                <td>16º</td>
+                <td>Mato Grosso</td>
+                <td class="num">3.658.649</td>
+                <td class="num">1,8%</td>
+            </tr>
+            <tr>
+                <td>17º</td>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3.302.729</td>
+                <td class="num">1,6%</td>
+            </tr>
+            <tr>
+                <td>18º</td>
+                <td>Piauí</td>
+                <td class="num">3.271.199</td>
+                <td class="num">1,6%</td>
+            </tr>
+            <tr>
+                <td>19º</td>
+                <td>Alagoas</td>
+                <td class="num">3.127.683</td>
+                <td class="num">1,5%</td>
+            </tr>
+            <tr>
+                <td>20º</td>
+                <td>Distrito Federal</td>
+                <td class="num">2.817.381</td>
+                <td class="num">1,4%</td>
+            </tr>
+            <tr>
+                <td>21º</td>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2.757.013</td>
+                <td class="num">1,3%</td>
+            </tr>
+            <tr>
+                <td>22º</td>
+                <td>Sergipe</td>
+                <td class="num">2.210.004</td>
+                <td class="num">1,1%</td>
+            </tr>
+            <tr>
+                <td>23º</td>
+                <td>Rondônia</td>
+                <td class="num">1.581.196</td>
+                <td class="num">0,8%</td>
+            </tr>
+            <tr>
+                <td>24º</td>
+                <td>Tocantins</td>
+                <td class="num">1.511.460</td>
+                <td class="num">0,7%</td>
+            </tr>
+            <tr>
+                <td>25º</td>
+                <td>Acre</td>
+                <td class="num">830.018</td>
+                <td class="num">0,4%</td>
+            </tr>
+            <tr>
+                <td>26º</td>
+                <td>Amapá</td>
+                <td class="num">733.759</td>
+                <td class="num">0,4%</td>
+            </tr>
+            <tr>
+                <td>27º</td>
+                <td>Roraima</td>
+                <td class="num">636.707</td>
+                <td class="num">0,3%</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td></td>
+                <td class="num">203.080.756</td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
