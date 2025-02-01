@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe#tela{
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+    <title>Uso de iframes</title>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis dolores suscipit sint sequi eos vitae quis? Veritatis nesciunt asperiores unde accusamus esse nostrum consectetur, maxime officia excepturi aliquid assumenda molestiae?</p>
+    <ul>
+        <li><a href="/paginas-extras/page001.html" target="frame">Primeira Página</a></li>
+        <li><a href="/paginas-extras/pag002.html" target="frame">Segunda Página</a></li>
+        <li><a href="/paginas-extras/page003.html" target="frame">Terceira Página</a></li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eum odit voluptate laboriosam ipsum architecto, natus vitae, nesciunt dicta quaerat nulla, dolores ut vel. Unde animi doloremque quaerat dolorum optio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nemo, natus non minus maiores rerum doloremque soluta veniam? Praesentium nostrum quos quaerat! Doloremque voluptatibus odio repellendus eveniet culpa, illum maiores.</p>
+    <iframe srcdoc="<h1>Escolha uma das opções acima</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nihil fuga totam temporibus ab debitis neque saepe tenetur quod accusantium obcaecati impedit eaque dolore nesciunt sapiente atque, id architecto necessitatibus.</p> <img src='imagens/cursoemvideo.png'>" name="frame" frameborder="0" id="tela">
+        <p>Infelizmente o seu navegador não é compatível com isso.</p>
+    </iframe>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam impedit quisquam minima nesciunt voluptatum quia quibusdam itaque beatae amet! Optio, ratione. Ullam accusantium enim, excepturi a placeat ipsam amet blanditiis.</p>
+</body>
+</html>
