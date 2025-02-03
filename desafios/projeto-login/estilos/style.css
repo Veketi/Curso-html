@@ -34,7 +34,7 @@ section{
     transform: translate(-50%, -50%);
     width: 80vw;
     margin: auto;
-    max-width: 400px;
+    width: 350px;
     vertical-align: middle;
     background-color: white;
     border-radius: 20px;
