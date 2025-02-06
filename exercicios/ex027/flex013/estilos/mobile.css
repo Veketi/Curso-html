@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+body{
+    overflow-y: hidden;
+}
+
+header > span.material-symbols-outlined{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+nav{
+    display: none;
+}
+
+nav > ul{
+    flex-flow: row wrap;
+}
+
+nav > ul > li{
+    flex: auto;
+    width: 100%;
+}

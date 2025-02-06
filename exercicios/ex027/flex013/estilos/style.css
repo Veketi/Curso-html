@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: lightgray;
+}
+
+header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: grey;
+}
+
+header > h1{
+    flex: 0 0 200px;
+
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    text-shadow: 3px 3px 5px rgb(87, 87, 87);
+}
+
+header > span.material-symbols-outlined{
+    display: none;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    box-shadow: 3px 3px 5px rgb(87, 87, 87);
+
+}
+header > span.material-symbols-outlined:hover{
+    cursor: pointer;
+}
+
+nav{
+    margin: 5px;
+}
+
+nav > ul{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+nav > ul > li{
+    align-items: flex-end;
+    justify-content: space-evenly;
+    flex: none;
+
+    list-style: none;
+    background-color: black;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 3px 3px 5px rgb(87, 87, 87);
+    margin: 5px;
+    padding: 5px;
+    transition: background-color .15s, transform .3s;
+}
+
+nav > ul > li > a{
+    text-decoration: none;
+    color: white;
+}
+nav > ul > li:hover{
+    background-color: rgb(99, 99, 99);
+    transform: translate(0, -10%);
+    transition: background-color .3s, transform .4s;
+}
+nav > ul > li:active{
+    background-color: white;
+    transform: translate(0, -2%);
+    transition: background-color .3s, transform .4s;
+}
+
+nav > ul > li > a:active{
+    color: black;
+    transition: color .3s;
+}
+
+
+main > article{
+    background-color: white;
+    width: 90vw;
+    max-width: 950px;
+    margin: 25px auto;
+    border-radius: 15px;
+    text-shadow: 3px 3px 5px rgb(199, 199, 199);
+    box-shadow: 3px 3px 5px rgb(173, 173, 173);
+    padding: 15px;
+}
+
+main > article > p{
+    text-align: justify;
+    text-indent: 3px;
+    padding: 5px 0;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mobile.css" media="screen and (max-width: 550px)">
+    <title>Menu Flexbox</title>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <span class="material-symbols-outlined" onclick="mostrarMenu()">menu</span>
+        <nav id="menu">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+                <li><a href="#">Opção 6</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Teste de Flex Box</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quo magnam ad facere eveniet aperiam assumenda cupiditate totam blanditiis molestiae quis ea repellat, dignissimos quas natus nihil sunt, voluptatum dolor? Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum neque similique veritatis sunt eum? Explicabo ratione nulla quo sequi? Autem eum nihil atque debitis aliquam fugit at sint perspiciatis sit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ipsum impedit repudiandae rem consequuntur dolores minus nisi facilis quis error esse tempore doloribus debitis eos corrupti suscipit, ex aperiam velit!</p>
+        </article>
+    </main>
+    <script>
+        const mostrarMenu = () => menu.style.display == 'none' ? menu.style.display = 'inline': menu.style.display = 'none';
+    </script>
+</body>
+</html>
